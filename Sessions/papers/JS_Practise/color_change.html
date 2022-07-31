@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color change</title>
+
+    <style>
+        .button {
+            font-size: 20px;
+            width:190px;
+            background-color: lightblue;
+            font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+            text-align: center;
+            /* margin-left:100px; */
+            /* margin-top:500px; */
+        }
+
+    </style>
+
+   
+</head>
+<body>
+
+    <p id="para-1">Hey this is the testing page</p>
+
+    
+
+    <button class="button" id="only-button">
+        Change color to Red
+    </button>
+
+    <button class="button" id="1-button">
+        Change color to Green 
+    </button>
+
+    <button class="button" id="2-button">
+        Change text to italics 
+    </button>
+
+    <script>
+
+        const btn = document.getElementById('only-button');
+
+        btn.addEventListener('click', function changeColor(event){
+
+            document.body.style.backgroundColor="red";
+        });
+
+        const btn1 = document.getElementById('1-button');
+
+btn1.addEventListener('click', function changeColor(event){
+
+    document.body.style.backgroundColor="green";
+});
+
+const btn2 = document.getElementById('2-button');
+// const para1 = document.getElementById('para-1');
+
+btn2.addEventListener('click', function changeColor(event){
+    // document.body.style.backgroundColor="black";
+
+
+    document.getElementById("para-1").style.fontSize = "xx-large";
+    // document.getElementById('para-1').style.fontSize='2 em';
+});
+
+
+    </script>
+
+
+</body>
+</html>
